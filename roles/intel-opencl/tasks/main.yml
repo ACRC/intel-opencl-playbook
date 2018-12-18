@@ -1,0 +1,10 @@
+---
+- name: Install Intel OpenCL packages
+  yum:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - /mnt/shared/apps/intel/opencl/opencl-1.2-base-3.1.1.11385-1.x86_64.rpm
+    - /mnt/shared/apps/intel/opencl/opencl-1.2-devel-3.1.1.11385-1.x86_64.rpm
+    - /mnt/shared/apps/intel/opencl/opencl-1.2-intel-cpu-3.1.1.11385-1.x86_64.rpm
+    - /mnt/shared/apps/intel/opencl/opencl-1.2-intel-devel-3.1.1.11385-1.x86_64.rpm
